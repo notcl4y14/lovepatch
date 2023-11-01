@@ -1,3 +1,4 @@
+-- https://github.com/notcl4y14/lovepatch
 local lib = {}
 
 -- Thanks to darkfrei for helping with the code
