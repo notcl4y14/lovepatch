@@ -19,6 +19,6 @@ function love.draw()
 end
 
 function love.mousemoved(mouseX, mouseY)
-	width = x + mouseX
-	height = y + mouseY
+	width = mouseX - x
+	height = mouseY - y
 end

@@ -9,6 +9,7 @@ The example code is in the `main.lua` file.
 
 # Library functions
 ```lua
-lovepatch.load(filename, edgeWidth, edgeHeight) -- Creates a new 9-patch object.
-lovepatch.draw(patch, x, y, width, height)      -- Draws a 9-patch object at the given position with the given size.
+lovepatch.load(filename, edgeWidth, edgeHeight)    -- Creates a new 9-patch object.
+lovepatch.load(filename, left, right, top, bottom) -- Creates a new 9-patch object with custom edges.
+lovepatch.draw(patch, x, y, width, height)         -- Draws a 9-patch object at the given position with the given size.
 ```
