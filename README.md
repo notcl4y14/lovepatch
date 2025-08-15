@@ -7,9 +7,15 @@ The example code is in the `main.lua` file.
 
 ![pic1](demo.gif)
 
-# Library functions
+# API
 ```lua
-lovepatch.load(filename, edgeWidth, edgeHeight)    -- Creates a new 9-patch object.
-lovepatch.load(filename, left, right, top, bottom) -- Creates a new 9-patch object with custom edges.
-lovepatch.draw(patch, x, y, width, height)         -- Draws a 9-patch object at the given position with the given size.
+-- Creates a new 9-patch object.
+lovepatch.load(image|filename, edgeWidth, edgeHeight)
+
+-- Creates a new 9-patch object with custom edges.
+lovepatch.load(image|filename, left, right, top, bottom)
+
+-- Draws a 9-patch object at the given position with the given size.
+-- sx, sy - scale
+lovepatch.draw(patch, x, y, width, height, sx = 1, sy = 1)
 ```
