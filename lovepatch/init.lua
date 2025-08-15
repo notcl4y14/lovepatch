@@ -7,7 +7,7 @@ local lib = {}
 function lib.load(arg0, arg1, arg2, arg3, arg4)
 	local image = nil
 
-	if type(arg0) == "table" then
+	if type(arg0) == "userdata" then
 		image = arg0
 	elseif type(arg0) == "string" then
 		image = love.graphics.newImage(arg0)
